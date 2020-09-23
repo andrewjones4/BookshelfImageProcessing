@@ -16,3 +16,5 @@ Install dependencies.
 
 ## Usage
     python main.py <image_file>
+
+Use Images/test.jpg for a test image.
