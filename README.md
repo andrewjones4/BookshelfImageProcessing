@@ -8,11 +8,11 @@ Initialize a virtual environment.
     
 Activate the virtual environment.
 
-`source venv/bin/activate`
+    source venv/bin/activate
 
 Install dependencies.
 
-`pip install -r requirements.txt`
+    pip install -r requirements.txt
 
 ## Usage
-`python main.py <image_file>`  
+    python main.py <image_file>
