@@ -28,10 +28,17 @@ The program then splits the image into individual books, based on an algorithm t
 
 Examples of individual books (rotated 90 degrees):
 
+<img src="https://github.com/andrewjones4/BookshelfImageProcessing/blob/master/Images/book1.png" width="600" height="60">
+<img src="https://github.com/andrewjones4/BookshelfImageProcessing/blob/master/Images/book2.png" width="600" height="60">
+
 Then, using contour detection, the program finds minimum bounding rectangles (MBRs) around individual characters.
+
+<img src="https://github.com/andrewjones4/BookshelfImageProcessing/blob/master/Images/character_MBR_example.png" width="600" height="60">
 
 Using size, color, and width, the program then determines which characters should be grouped together, placing a new MBR around the whole title/author.
 
-Finally, using the pytesseract library, the program extracts the text from these MBRs, storing the data in a pandas DataFrame.
+<img src="https://github.com/andrewjones4/BookshelfImageProcessing/blob/master/Images/title_author_MBR_example.png" width="600" height="60">
 
-The final step is to use a little natural language processing to help determine what is the author and what is the title, with named entity recognition.
+Then, using the pytesseract library, the program extracts the text from these MBRs, storing the data in a pandas DataFrame.
+
+The final step is to use a little natural language processing to help determine what is the author and what is the title, with named entity recognition, then outputting the updated DataFrame to the terminal.
