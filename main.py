@@ -280,7 +280,7 @@ def pixel_difference(a, b):
 
 if __name__ == '__main__':
 	if len(sys.argv) != 2:
-		print("Usage: python bookshelf_processor.py <image_file>")
+		print("Usage: python main.py <image_file>")
 		exit()
 
 	image = sys.argv[1]
