@@ -18,3 +18,20 @@ Install dependencies.
     python main.py <image_file>
 
 Use Images/test.jpg for a test image.
+
+## Description
+Input should be an image of a bookshelf similar to the example below:
+
+<img src="https://github.com/andrewjones4/BookshelfImageProcessing/blob/master/Images/test.jpg" width="450" height="600">
+
+The program then splits the image into individual books, based on an algorithm that determines color changes at different y-coordinate values.
+
+Examples of individual books (rotated 90 degrees):
+
+Then, using contour detection, the program finds minimum bounding rectangles (MBRs) around individual characters.
+
+Using size, color, and width, the program then determines which characters should be grouped together, placing a new MBR around the whole title/author.
+
+Finally, using the pytesseract library, the program extracts the text from these MBRs, storing the data in a pandas DataFrame.
+
+The final step is to use a little natural language processing to help determine what is the author and what is the title, with named entity recognition.
