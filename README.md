@@ -3,7 +3,7 @@ Given an image of a bookshelf as input, returns a dataframe of titles and author
 
 ## Setup
 Initialize a virtual environment.  
-```virtualenv venv```  
+    virtualenv venv  
 Activate the virtual environment.  
 `source venv/bin/activate`  
 Install dependencies.  
